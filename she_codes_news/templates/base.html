@@ -27,6 +27,13 @@
         </header>
 
         <!-- Content Blocks -->
-        {% block content %}{% endblock %}
+        {% block content %}
+            {% if user.is_authenticated %}
+                {% block page %}
+                {% endblock %}
+            {% else %}
+                <p>Please Log in</p>
+            {% endif %}
+        {% endblock %}
     </body>
 </html>

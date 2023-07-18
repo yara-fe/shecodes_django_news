@@ -5,11 +5,15 @@
 <link rel="stylesheet" type="text/css" href="{% static 'news/styles.css' %}">
 {% endblock %}
 
-{% block content %}
+{% block page %}
+{% comment %} {% endblock %} {% endcomment %}
+
+{% comment %} {% block content %} {% endcomment %}
 
     <br>
     <a href="{% url 'news:newStory' %}">Write news Story</a>
-    
+    {% comment %} {% endblock %} {% endcomment %}
+
     <h2>Latest News</h2>
 
     <div id="latest-stories">
