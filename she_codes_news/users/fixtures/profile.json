@@ -1,0 +1,18 @@
+[
+  {
+    "model": "users.profile",
+    "pk": 1,
+    "fields": {
+      "bio": "I'm Yara, I live in Brisbane.",
+      "user_id": 1
+    }
+  },
+  {
+    "model": "users.profile",
+    "pk": 2,
+    "fields": {
+      "bio": "I'm Jane, I live in Brisbane.",
+      "user_id": 8
+    }
+  }
+]
