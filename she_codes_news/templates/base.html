@@ -28,12 +28,12 @@
 
         <!-- Content Blocks -->
         {% block content %}
-            {% if user.is_authenticated %}
+            {% comment %} {% if user.is_authenticated %}
                 {% block page %}
                 {% endblock %}
             {% else %}
                 <p>Please Log in</p>
-            {% endif %}
+            {% endif %} {% endcomment %}
         {% endblock %}
     </body>
 </html>
