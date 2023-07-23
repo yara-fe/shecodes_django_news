@@ -9,7 +9,7 @@
       {{ form.as_p }}
       <button type="submit">Save Changes</button>
       <!-- Add a "Cancel" button to redirect back to the story detail page without saving changes -->
-      <a href="{% url 'news:story' story.id %}" id="btn-cancel">Cancel</a>
+      <a href="{% url 'news:story' story.id %}" class="btn btn-secondary">Cancel</a>
     </form>
   </div>
 
