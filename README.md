@@ -30,37 +30,30 @@ Step | Action | Command
 | 9 | Run local web server | `python manage.py runserver`
 | 10 | Launch news website | http://127.0.0.1:8000/news 
 
-## Database Schema![ {{ My ERD }} ]( {{ ./relative_path_to_your_entity_relationship_diagram }} )
-
 ## Project Features
 
-- [X] Order stories by date![ {{ Description of image }} ]( {{ ./relative_path_to_image_file }} )
+- [X] Home page and Order stories by date ![Order by date](https://github.com/yara-fe/shecodes_django_news/blob/main/images/2023-07-23_23-57-24.png)
 
-- [ ] Styled "new story" form![ {{ Description of image }} ]( {{ ./relative_path_to_image_file }} )
+- [x] "New story" Form with Story Images ![New Story](https://github.com/yara-fe/shecodes_django_news/blob/main/images/2023-07-23_23-57-35.png)
 
-- [ ] Story images![ {{ Description of image }} ]( {{ ./relative_path_to_image_file }} )
+- [x] Log-in ![ {{ Login }} ](https://github.com/yara-fe/shecodes_django_news/blob/main/images/2023-07-23_23-57-38.png)
 
-- [ ] Log-in/log-out![ {{ Description of image }} ]( {{ ./relative_path_to_image_file }} )
+- [x] Logout button in Nav bar when user is logged in ![ {{ Logout }} ](https://github.com/yara-fe/shecodes_django_news/blob/main/images/2023-07-23_23-57-24.png)
+      
+- [x] "Account view" page ![ {{ Profile }} ](https://github.com/yara-fe/shecodes_django_news/blob/main/images/2023-07-23_23-58-32.png)
 
-- [ ] "Account view" page![ {{ Description of image }} ]( {{ ./relative_path_to_image_file }} )
+- [x] "Create Account" page ![ {{ Create Account }} ](https://github.com/yara-fe/shecodes_django_news/blob/main/images/2023-07-24_0-15-44.png)
 
-- [ ] "Create Account" page![ {{ Description of image }} ]( {{ ./relative_path_to_image_file }} )
+- [x] View stories by author ![ {{ Author }} ](https://github.com/yara-fe/shecodes_django_news/blob/main/images/2023-07-23_23-58-15.png)
 
-- [ ] View stories by author![ {{ Description of image }} ]( {{ ./relative_path_to_image_file }} )
+- [x] "Create Story" functionality only available when user is logged in
+![ {{ User logged in - edit story }} ](https://github.com/yara-fe/shecodes_django_news/blob/main/images/2023-07-23_23-58-48.png)
 
-- [ ] "Log-in" button only visible when no user is logged in/"Log-out" buttononly visible when a user *is* logged in![ {{ Description of image }} ]( {{ ./relative_path_to_image_file }} )
-
-- [ ] "Create Story" functionality only available when user is logged in![ {{ Description of image }} ]( {{ ./relative_path_to_image_file }} )
+![ {{ User logged out - no edit story }} ](https://github.com/yara-fe/shecodes_django_news/blob/main/images/2023-07-23_23-59-21.png)
 
 ## Additional Features:
 
-- [ ] Add categories to the stories and allow the user to search for stories bycategory.![ {{ Description of image }} ]( {{ ./relative_path_to_image_file }} )
-
-- [ ] Add the ability to update and delete stories (consider permissions - whoshould be allowed to update or and/or delete stories).![ {{ Description of image }} ]( {{ ./relative_path_to_image_file }} )
-
-- [ ] Add the ability to “favourite” stories and see a page with your favouritestories.![ {{ Description of image }} ]( {{ ./relative_path_to_image_file }} )
-
-- [ ] Our form for creating stories requires you to add the publication date,update this to automatically save the publication date as the day thestory was first published (maybe you could then add a field to showwhen the story was updated).![ {{ Description of image }} ]( {{ ./relative_path_to_image_file }} )
-
-
-- [ ] Gracefully handle the error where someone tries to create a new story whenthey are not logged in.![ {{ Description of image }} ]( {{ ./relative_path_to_image_file }} )
+- [x] Add the ability to update and delete stories (only when logged in).
+- [x] Additionally, the publish date is now automatically set to the date the story is created or edited, rather than a manual input.
+![ {{ Update and Delete Story }} ](https://github.com/yara-fe/shecodes_django_news/blob/main/images/2023-07-23_23-58-55.png)
+![ {{ Confirm delete }} ](https://github.com/yara-fe/shecodes_django_news/blob/main/images/2023-07-23_23-59-05.png)
