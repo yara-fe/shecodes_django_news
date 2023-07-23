@@ -10,7 +10,7 @@
 
     {% comment %} Allow authenticated user to edit story {% endcomment %}
     {% if user.is_authenticated %}
-    <a href="{% url 'news:update_story' story.pk %}">Edit</a>
+    <a href="{% url 'news:update_story' story.id %}">Edit</a>
     {% endif %}
 
     <div id="story-wrapper">

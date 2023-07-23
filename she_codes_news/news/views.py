@@ -42,4 +42,18 @@ class UpdateStoryView(generic.UpdateView):
     form_class = StoryForm
     template_name = 'news/updateStory.html'
     context_object_name = 'story'
-    success_url = reverse_lazy('news:index')    
+    success_url = reverse_lazy('news:index')
+
+class DeleteStoryView(generic.DeleteView):
+    model = NewsStory
+    template_name = 'news/updateStory.html' #use same template as Update view
+    context_object_name='story'
+    success_url = reverse_lazy('news:index') #redirect to index page upon successful deletion
+
+    def get(self, request, *args, **kwargs):
+        #handle GET request to display the confirmation dialog
+        return self.post(request, *args, **kwargs)
+
+    def post(self, request, *args, **kwargs):
+        #handle POST request to delete the story
+        return super().post(request, *args, **kwargs)
