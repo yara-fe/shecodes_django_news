@@ -7,12 +7,22 @@
 {% endblock %}
 
 {% block content %}
+
+    {% comment %} Allow authenticated user to edit story {% endcomment %}
+    {% if user.is_authenticated %}
+    <a href="{% url 'news:update_story' story.pk %}">Edit</a>
+    {% endif %}
+
     <div id="story-wrapper">
         <h2>{{ story.title }}</h2>
         <h4>{{ story.author }}</h4>
+        
         <div id="story-content">
-            {% comment %} <img src="{% static '/news/images/placeholder-5.jpg' %}"> {% endcomment %}
-            <img src =" {{ story.image }} ">
+            {% if story.image is not None %}
+                <img src =" {{ story.image }} ">
+            {% else %}
+                <img src="https://picsum.photos/id/1/600">
+            {% endif %}
             {{ story.content|linebreaks }}
         </div>
     </div>
