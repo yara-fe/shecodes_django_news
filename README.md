@@ -36,7 +36,7 @@ Step | Action | Command
 
 - [x] "New story" Form with Story Images ![New Story](https://github.com/yara-fe/shecodes_django_news/blob/main/images/2023-07-23_23-57-35.png)
 
-- [x] Log-in ![ {{ Login }} ](https://github.com/yara-fe/shecodes_django_news/blob/main/images/2023-07-23_23-57-38.png)
+- [x] Log-in ![ {{ Login }} ](https://github.com/yara-fe/shecodes_django_news/blob/main/images/2023-07-24_0-12-38.png)
 
 - [x] Logout button in Nav bar when user is logged in ![ {{ Logout }} ](https://github.com/yara-fe/shecodes_django_news/blob/main/images/2023-07-23_23-57-24.png)
       
