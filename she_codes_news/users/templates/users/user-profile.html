@@ -1,17 +1,14 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
 
-{% block stylesheets %}
-    <link rel="stylesheet" type="text/css" href="{% static 'news/styles.css'%}">
-{% endblock %}
-
 {% block content %}
-    <div id="profile-wrapper">
-        <h2>{{ user.username }}'s Profile</h2>
-    </div>
-    <div id="profile-wrapper">
-        <h3>Bio</h3>
-        <p>Bio sits here <br> {{ account.bio }} </p>
+    <h2>{{ object.first_name }}'s Profile</h2>
+    <div id = "profile-pic">
         <img src="{% static '/users/images/profileicon.png' %}">
     </div>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>  
 {% endblock %}

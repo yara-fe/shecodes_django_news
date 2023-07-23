@@ -3,7 +3,7 @@
     "model": "users.profile",
     "pk": 1,
     "fields": {
-      "bio": "I'm Yara, I live in Brisbane.",
+      "bio": "Say hello to Yara, the thoughtful wordsmith behind the SheCodes News. With a penchant for simplicity and a love for storytelling, she weaves everyday experiences into heartwarming narratives. Through her words, Yara invites readers to find beauty in the ordinary and embrace the tranquility of life's little joys. When not writing, she can be found strolling through nature, seeking inspiration for her next tale. 📝🌿 #SimpleSerenity #BloggerLife",
       "user_id": 1
     }
   },
@@ -11,8 +11,8 @@
     "model": "users.profile",
     "pk": 2,
     "fields": {
-      "bio": "I'm Jane, I live in Brisbane.",
-      "user_id": 8
+      "bio": "Meet Oliver Lavers, the inquisitive wordsmith on a quest for truth. A seasoned journalist with a knack for unearthing untold stories, Oliver roams the world with a notepad in hand, uncovering hidden gems and shedding light on the shadows. When not chasing leads, this intrepid explorer seeks solace in books and pens captivating narratives. 📝✨ #JournalismJourneys #TruthUnveiled",
+      "user_id": 3
     }
   }
 ]
