@@ -1,6 +1,5 @@
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, UpdateView, DetailView
-from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import CustomUser
 from .forms import CustomUserCreationForm, CustomUserChangeForm
 
@@ -9,11 +8,11 @@ class CreateAccountView(CreateView):
     success_url = reverse_lazy('login') # The `reverse_lazy` function is used to provide the success URL as a string
     template_name = 'users/createAccount.html'
 
-class UserProfileView(LoginRequiredMixin, DetailView, UpdateView):
+class UserProfileView(DetailView, UpdateView):
     model = CustomUser
     form_class = CustomUserChangeForm
     template_name = 'users/user-profile.html'
-    success_url = reverse_lazy('news:index')
+    success_url = reverse_lazy('news:index') #Could not get redirect to user profile to work, so using index for now.
 
     def get_object(self, queryset=None):
         # Use the captured 'pk' from the URL to fetch the specific user's profile

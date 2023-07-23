@@ -2,13 +2,13 @@
 {% load static %}
 
 {% block content %}
-    <h2>{{ object.first_name }}'s Profile</h2>
-    <div id = "profile-pic">
-        <img src="{% static '/users/images/profileicon.png' %}">
-    </div>
-    <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Save</button>
-    </form>  
+        <h2>{{ object.first_name }}'s Profile</h2>
+        <div id = "profile-pic">
+            <img src="{% static '/users/images/profileicon.png' %}">
+        </div>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Save</button>
+        </form>  
 {% endblock %}
